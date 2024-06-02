@@ -1,22 +1,42 @@
+* {
+    color: #ffffff;
+    z-index: 1;
+}
+
+body {
+    padding: 32px 64px;
+}
+
+.pointingCursor {
+    cursor: pointer;
+}
+
 #header {
-    background-color: #000000;
+    position: fixed;
+    background: #121212;
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 16px;
+    padding-left: 64px;
+    height: 96px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 #homeUrl {
     text-decoration: none;
-    color: #db0000;
     perspective: 2em;
 }
 
 #homeUrl h1 {
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'default';
+    font-size: 50px;
+    font-weight: 700;
     transform: rotateX(10deg);
     transition: transform 0.5s;
+    color: #db0000;
 }
 
 #homeUrl h1:hover {
@@ -32,11 +52,119 @@
 }
 
 #tabs h1 {
-    font-family: system-ui;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #tabs h1:first-of-type {
     font-weight: 700;
+}
+
+/* 
+background
+*/
+
+#bg {
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#bg .black {
+    height: 100vh;
+    /* black size */
+    width: 35vw;
+    background: #000000;
+    z-index: 0;
+}
+
+#bg .gradient {
+    height: 100vh;
+    /* gradient size */
+    width: 800px;
+    background: linear-gradient(90deg, #000000, #00000000);
+    z-index: 0;
+}
+
+#bg img {
+    height: 100%;
+    position: absolute;
+    /* image offset */
+    right: 0vh;
+    top: 0;
+    z-index: -1;
+}
+
+/* 
+main content
+*/
+
+#content {
+    width: 50vw;
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#flags {
+    display: flex;
+    align-items: center;
+}
+
+#flags span:first-of-type {
+    padding-left: 0;
+}
+
+#flags span:last-of-type {
+    border: 0;
+}
+
+#flags span {
+    font-weight: 1000;
+    text-transform: uppercase;
+    padding: 0 16px;
+    font-size: 20px;
+    border-right: #ffffff solid 1px;
+}
+
+#title {
+    display: flex;
+}
+
+#title div {
+    font-family: 'default';
+    font-weight: 1000;
+    font-size: 150px;
+    margin-right: 16px;
+}
+
+.btn {
+    white-space: nowrap;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 1000;
+    width: min-content;
+}
+
+#description {
+    font-family: monospace;
+    color: gray;
+    line-height: 24px;
+}
+
+#playBtn {
+    border: #db0000 solid 1px;
+    background: #db0000;
+}
+
+#playBtn:hover {
+    background: none;
+    border: #ffffff solid 1px;
 }

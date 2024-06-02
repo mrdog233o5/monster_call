@@ -13,18 +13,33 @@
 	</head>
 	<body>
 		<div id="header">
-			<a href="/" id="homeUrl"><h1>YOUFLIX</h1></a>
+			<a href="/" id="homeUrl" class="pointingCursor"><h1>YOUFLIX</h1></a>
 			<div id="tabs">
-				<h1>Home</h1>
-				<h1>TV Shows</h1>
-				<h1>Movies</h1>
-				<h1>News</h1>
-				<h1>My List</h1>
+				<h1 class="pointingCursor">Home</h1>
+				<h1 class="pointingCursor">TV Shows</h1>
+				<h1 class="pointingCursor">Movies</h1>
+				<h1 class="pointingCursor">News</h1>
+				<h1 class="pointingCursor">My List</h1>
 			</div>
 		</div>
 		<div id="content">
-			<div id="left"></div>
-			<div id="right"></div>
+			<div id="flags">
+				<span>Thriller</span>
+				<span>Movies</span>
+				<span>Fantasy</span>
+			</div>
+			<h1 id="title">
+				<div>A</div> 
+				<div style="text-decoration: underline #a68d40 8px;">Monster</div>  
+				<div style="transform: translateY(30px); color: #a68d40;">Calls</div>
+			</h1>
+			<p id="description">Anim labore anim Lorem eiusmod quis proident occaecat eu elit deserunt. Non consequat occaecat aute. Do ad ea proident aute deserunt voluptate consequat adipisicing ut exercitation est consequat nulla. Ad minim nulla labore nulla ut voluptate. Nisi et reprehenderit in culpa nostrud et eu. Velit reprehenderit ullamco amet.</p>
+			<div id="playBtn" class="btn">WATCH NOW</div>
+		</div>
+		<div id="bg">
+			<div class="black"></div>
+			<div class="gradient"></div>
+			<img src="/background1.webp" alt="background">
 		</div>
 	</body>
 </html>
