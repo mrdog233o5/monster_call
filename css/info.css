@@ -1,0 +1,42 @@
+#header {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 16px;
+}
+
+#homeUrl {
+    text-decoration: none;
+    color: #db0000;
+    perspective: 2em;
+}
+
+#homeUrl h1 {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+#homeUrl h1:hover {
+    transform: rotateX(20deg);
+}
+
+#tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+#tabs h1 {
+    font-family: system-ui;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+#tabs h1:first-of-type {
+    font-weight: 700;
+}
