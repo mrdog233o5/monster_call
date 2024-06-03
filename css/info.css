@@ -7,18 +7,14 @@ body {
     padding: 32px 64px;
 }
 
-.pointingCursor {
-    cursor: pointer;
-}
-
 #header {
     position: fixed;
     background: #121212;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 32px;
     padding-left: 64px;
-    height: 96px;
+    height: 10vh;
     width: 100vw;
     top: 0;
     left: 0;
@@ -51,12 +47,12 @@ body {
     color: #ffffff;
 }
 
-#tabs h1 {
+#tabs h2 {
     font-weight: 200;
     font-size: 20px;
 }
 
-#tabs h1:first-of-type {
+#tabs h2:first-of-type {
     font-weight: 700;
 }
 
@@ -109,7 +105,7 @@ main content
     padding-top: 128px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 5vh;
 }
 
 #flags {
@@ -140,7 +136,7 @@ main content
 #title div {
     font-family: 'default';
     font-weight: 1000;
-    font-size: 150px;
+    font-size: 15vh;
     margin-right: 16px;
 }
 
@@ -167,4 +163,113 @@ main content
 #playBtn:hover {
     background: none;
     border: #ffffff solid 1px;
+}
+
+#suggestionsContainer {
+    position: fixed;
+    bottom: 32px;
+}
+
+#suggestionsContainer h1 {
+    text-transform: uppercase;
+    font-family: 'default';
+    margin-bottom: 32px;
+}
+
+#suggestions {
+    display: flex;
+    gap: 32px;
+}
+
+.suggestion {
+    width: 130px;
+    overflow: hidden;
+}
+
+.suggestion img {
+    background: red;
+    height: 160px;
+}
+
+.suggestion h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 0;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 
+episodes
+*/
+
+#episodesContainer {
+    position: fixed;
+    width: 100vw;
+    height: 90vh;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+}
+
+#episodesWindow {
+    position: fixed;
+    width: 70vw;
+    height: 70vh;
+    background: #121212;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+#episodesTitle {
+    font-size: 40px;
+    overflow: scroll;
+    padding: 16px 32px !important;
+    margin: 0 !important;
+}
+
+#episodesContent h1 {
+    font-family: 'default';
+    font-weight: 100;
+    margin: 16px 32px;
+}
+
+#episodes {
+    height: calc(70vh - 80px);
+    overflow: scroll;
+}
+
+.episode:first-of-type {
+    border-top: #505050 1px solid;
+}
+
+.episode {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    width: calc(70vw - 32px);
+    padding-right: 32px;
+    border-bottom: #505050 1px solid;
+}
+
+.episode .num {
+    padding: 0 16px;
+    color: #d3d3d3;
+}
+
+.episode .title {
+    font-size: 16px;
+}
+
+.episode .description {
+    font-size: 16px;
+    color: #c5c5c5;
+}
+
+.episode:hover {
+    background: #505050;
 }

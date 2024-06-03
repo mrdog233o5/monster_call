@@ -15,11 +15,11 @@
 		<div id="header">
 			<a href="/" id="homeUrl" class="pointingCursor"><h1>YOUFLIX</h1></a>
 			<div id="tabs">
-				<h1 class="pointingCursor">Home</h1>
-				<h1 class="pointingCursor">TV Shows</h1>
-				<h1 class="pointingCursor">Movies</h1>
-				<h1 class="pointingCursor">News</h1>
-				<h1 class="pointingCursor">My List</h1>
+				<h2 class="pointingCursor">Home</h2>
+				<h2 class="pointingCursor">TV Shows</h2>
+				<h2 class="pointingCursor">Movies</h2>
+				<h2 class="pointingCursor">News</h2>
+				<h2 class="pointingCursor">My List</h2>
 			</div>
 		</div>
 		<div id="content">
@@ -33,13 +33,41 @@
 				<div style="text-decoration: underline #a68d40 8px;">Monster</div>  
 				<div style="transform: translateY(30px); color: #a68d40;">Calls</div>
 			</h1>
-			<p id="description">Anim labore anim Lorem eiusmod quis proident occaecat eu elit deserunt. Non consequat occaecat aute. Do ad ea proident aute deserunt voluptate consequat adipisicing ut exercitation est consequat nulla. Ad minim nulla labore nulla ut voluptate. Nisi et reprehenderit in culpa nostrud et eu. Velit reprehenderit ullamco amet.</p>
-			<div id="playBtn" class="btn">WATCH NOW</div>
+			<p id="description">Anim labore anim Lorem eiusmod quis proident occaecat eu elit deserunt. </p>
+			<div id="playBtn" class="btn">ALL EPISODES</div>
+			<div id="suggestionsContainer">
+				<h1>You may also like</h1>
+				<div id="suggestions">
+					<div class="suggestion">
+						<img src="/background.jpg" alt="movie">
+						<h2>Amazing Maurice</h2>
+					</div>
+					<div class="suggestion">
+						<img src="/background1.webp" alt="movie">
+						<h2>Long Walk To Water</h2>
+					</div>
+					<div class="suggestion">
+						<img src="/background2.webp" alt="movie">
+						<h2>Journey to the west</h2>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="bg">
 			<div class="black"></div>
 			<div class="gradient"></div>
 			<img src="/background1.webp" alt="background">
+		</div>
+		
+		<div id="episodesOuterContainer" hidden>
+			<div id="episodesContainer">
+				<div id="episodesWindow">
+					<div id="episodesContent">
+						<h1 id="episodesTitle">Select Episodes</h1>
+						<div id="episodes"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
