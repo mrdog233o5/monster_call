@@ -16,7 +16,9 @@ As the monster told him the second tale, Conor also smashed his grandma’s hous
 Invisibility
 Conor got ignored by everyone in the school. His classmates don't talk to him and his teacher skip him when asking questions.
 The Heal Is A Lie
-Conor’s mum told him that the medicine was not working, but he thought the monster is here to heal his mom, so he ask why is the monster here. It’s time for the fourth tale.`.split('\n')
+Conor’s mum told him that the medicine was not working, but he thought the monster is here to heal his mom, so he ask why is the monster here, and the monster say it’s time for the fourth tale.
+And No Mum For Ya
+The monster forced conor to tell the truth and they went back to the hospital together and conor faced his mum’s death.`.split('\n');
 
 for (let i = 0; i < episodes.length/2; i++) {
     episodesContainer.innerHTML += `

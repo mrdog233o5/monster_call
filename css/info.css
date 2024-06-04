@@ -179,6 +179,7 @@ main content
 #suggestions {
     display: flex;
     gap: 32px;
+    cursor: pointer;
 }
 
 .suggestion {
