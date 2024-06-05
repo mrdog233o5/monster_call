@@ -105,7 +105,7 @@ main content
     padding-top: 128px;
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 20px;
 }
 
 #flags {
